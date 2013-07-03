@@ -25,5 +25,4 @@ var Subscription = function(){
   
 }();
 
-
 module.exports = Subscription;

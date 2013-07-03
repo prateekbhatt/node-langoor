@@ -1,6 +1,6 @@
 'use strict';
 
-// set Node environment to development
+// set Node environment
 process.env.NODE_ENV = 'development';
 
 var server = require('./server');
