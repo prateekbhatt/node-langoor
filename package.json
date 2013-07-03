@@ -30,7 +30,8 @@
   "devDependencies": {
     "should": "~1.2.2",
     "zombie": "~2.0.0-alpha19",
-    "mocha": "~1.12.0"
+    "mocha": "~1.12.0",
+    "grunt": "~0.4.1"
   },
   "readmeFilename": "README.md"
 }
