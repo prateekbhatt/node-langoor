@@ -1,3 +1,28 @@
 extends layout
 block content
-  p Hello
+
+  table.table
+    caption Subscribers
+    thead
+      tr
+        th Email
+        th Name
+        th Phone
+        th Website
+        th Address
+        th Description
+        th Action
+    tbody
+      if (subscribers)
+        for (s in subscribers)
+          tr
+            td= s.email
+            td= s.name
+            td= s.phon
+            td= s.web
+            td= s.addr
+            td= s.desc
+            td= 'put btn'
+      else
+        tr
+          td 'No subscribers here!'
