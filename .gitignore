@@ -12,3 +12,10 @@ logs
 results
 
 npm-debug.log
+
+node_modules
+
+config/default.js
+config/test.js
+config/development.js
+config/production.js
