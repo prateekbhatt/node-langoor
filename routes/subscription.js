@@ -8,7 +8,7 @@ var path = require('path')
 exports.index = function (req, res){
   Subscription.find({}, function (err, subs){
     if (err) return next(err);
-    res.subscribers = subs;
+    res.locals.subscribers = subs;
     res.render('index',
       { success: req.flash('success'), error: req.flash('error') });
   });

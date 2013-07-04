@@ -14,7 +14,7 @@ block content
         th Action
     tbody
       if (subscribers)
-        for (s in subscribers)
+        for s in subscribers
           tr
             td= s.email
             td= s.name

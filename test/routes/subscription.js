@@ -1,6 +1,7 @@
 'use strict';
 
 var Browser = require('zombie')
+  , should = require('should')
   , path = require('path')
   , rootDir = path.join(__dirname, '../..')
   , server = require(path.join(rootDir, 'server'))
@@ -19,11 +20,18 @@ describe('Subscription page', function(){
   });
 
 
-  beforeEach(function (done){
-    browser.visit(url);    
-  });
+  // beforeEach(function (done){
+  //   browser.visit(url, function (){
+  //     done();
+  //   });
+  // });
 
-  it('should have valid title')
+  it.only('should have valid title', function (done){
+    Browser.visit(url, function (err, browser){
+      true.should.be.true
+      done()
+    })
+  })
   it('should add new subscription')
   it('should remove subscription')
   it('should change status of subscription')
